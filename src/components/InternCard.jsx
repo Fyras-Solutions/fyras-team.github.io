@@ -1,5 +1,5 @@
 import React from "react";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiGlobe } from "react-icons/fi";
 
 export default function InternCard({ intern }) {
   return (
@@ -48,17 +48,29 @@ export default function InternCard({ intern }) {
             </div>
           </div>
 
-          {/* GitHub Button */}
-          {intern.github && (
-            <a
-              href={`https://github.com/${intern.github}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 text-white bg-gray-800 rounded-full px-6 py-3 hover:bg-gray-700 transition-colors duration-300 font-semibold"
-            >
-              <FiGithub className="text-xl" /> GitHub
-            </a>
-          )}
+          {/* Action Buttons */}
+          <div className="flex flex-col items-center gap-3">
+            {intern.github && (
+              <a
+                href={`https://github.com/${intern.github}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-64 flex items-center justify-center gap-2 text-white bg-gray-800 rounded-full px-6 py-3 hover:bg-gray-700 transition-colors duration-300 font-semibold"
+              >
+                <FiGithub className="text-xl" /> GitHub
+              </a>
+            )}
+            {intern.website && (
+              <a
+                href={intern.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-64 flex items-center justify-center gap-2 text-gray-800 bg-gray-100 rounded-full px-6 py-3 hover:bg-gray-200 transition-colors duration-300 font-semibold"
+              >
+                <FiGlobe className="text-xl" /> Website
+              </a>
+            )}
+          </div>
         </div>
   );
 }

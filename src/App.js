@@ -2,18 +2,16 @@ import React, { useEffect, useState } from "react";
 import InternCard from "./components/InternCard";
 import SearchFilter from "./components/SearchFilter";
 import "./App.css"; // Tailwind CSS
+import internsData from "./data/interns";
 
 function App() {
   const [interns, setInterns] = useState([]);
   const [search, setSearch] = useState("");
   const [sortField, setSortField] = useState("name");
 
-  // Fetch interns from backend
+  // Load interns from a local static list (no backend)
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/interns")
-      .then((res) => res.json())
-      .then((data) => setInterns(data))
-      .catch((err) => console.error(err));
+    setInterns(internsData);
   }, []);
 
   // Filter interns based on search

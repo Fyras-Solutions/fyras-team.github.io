@@ -14,24 +14,34 @@ const interns = [
     image: "srihari_raman.png",
   },
   {
-    name: "Jordan Lee",
-    role: "Product Intern",
-    joined: "2024-09-05",
-    about: "Explores user problems and specs features.",
-    skills: ["Product", "Research", "Figma"],
-    github: "",
-    website: "https://example.com/jordan-lee",
+    name: "Jayaprasath",
+    role: "Backend Intern",
+    joined: "2025-07-16",
+    about: "Building scalable systems and optimizing workflows and contributing to team success.",
+    skills: [ "Python", "FastAPI", "Linux", "Docker"],
+    github: "jp-fyras",
+    website: "",
     // no image for now
   },
   {
-    name: "Samira Patel",
-    role: "Data Intern",
-    joined: "2024-09-12",
-    about: "Works on analytics pipelines and dashboards.",
-    skills: ["Python", "Pandas", "SQL"],
-    github: "",
-    website: "https://example.com/samira-patel",
+    name: "Aswin",
+    role: "Backend Intern",
+    joined: "2025-07-16",
+    about: "Exploring microservices and scalable backend systems.",
+    skills: ["Python", "fastapi", "MongoDB", "Node.js", "Express"],
+    github: "AswinGMX",
+    website: "",
     // no image for now
+  },
+  {
+  name: "Phil Jacob",
+  role: "Fullstack developer",
+  joined: "2024-09-01",
+  about: "Dedicated to building scalable, user-centric web applications that drive innovation and efficiency.",
+  skills: ["Python", "Javascript", "MongoDB", "Node.js"],
+  github: "phil-Jacob",
+  website: "",
+  // no image for now
   },
 ];
 

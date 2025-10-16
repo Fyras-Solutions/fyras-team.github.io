@@ -33,7 +33,10 @@ jobs:
       - name: Build
         env:
           CI: true
-        run: npm run build
+        run: PUBLIC_URL=/fyras-team.github.io npm run build
+
+      - name: Add 404 fallback for SPA
+        run: cp build/index.html build/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -50,4 +53,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

@@ -43,6 +43,16 @@ const interns = [
   website: "",
   // no image for now
   },
+  {
+  name: "Asmitha Samuthrakumar",
+  role: "Intern",
+  joined: "2025-09-09",
+  about: "Exploring AI, data, and scalable software to build meaningful, efficient systems",
+  skills: ["Python", "Java"],
+  github: "AsmiSam",
+  website: "",
+  // no image for now
+  },
 ];
 
 export default interns;

@@ -53,6 +53,16 @@ const interns = [
   website: "",
   // no image for now
   },
+{
+    name: "Harshit Rai",
+    role: "Intern",
+    joined: "2025-11-05",
+    about: "Building scalable AI systems, exploring LLM firewalls, context management, and backend architecture.",
+    skills: ["Python", "FastAPI", ".NET Core", "SQL", "MongoDB", "Docker"],
+    github: "Harshit9422",
+    website: "",
+    // no image for now
+  },
 ];
 
 export default interns;
